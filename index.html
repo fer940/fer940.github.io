@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fernanda Martínez Castro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffeef5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f48fb1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f8bbd0;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #f48fb1;
+      color: white;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #d81b60;
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #d81b60;
+    }
+
+    /* Carrusel estilo bus trap */
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      height: 300px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fernanda Martínez Castro</h1>
+  </header>
+
+  <nav>
+    <a href="#quien">¿Quién soy yo?</a>
+    <a href="#quehago">¿Qué hago y qué quiero?</a>
+    <a href="#cv">Currículum</a>
+  </nav>
+
+  <!-- Carrusel -->
+  <div class="carousel">
+    <div class="slides">
+      <img src="https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1000&q=80" alt="Imagen 1">
+      <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&w=1000&q=80" alt="Imagen 2">
+      <img src="https://images.unsplash.com/photo-1527979809431-a0e3d8be0632?auto=format&fit=crop&w=1000&q=80" alt="Imagen 3">
+    </div>
+  </div>
+
+  <section id="quien">
+    <h2>¿Quién soy yo?</h2>
+    <p>Hola, mi nombre es <span class="highlight">Fernanda Martínez Castro</span>, tengo 20 años y vivo en <span class="highlight">Nezahualcóyotl</span>. Actualmente estudio y trabajo. Me considero muy risueña, social, chillona y sencilla. Estoy felizmente con mi novio <span class="highlight">Pablo</span>. Mi sueño es ser maestra de primaria, dar a 3° grado y formar una linda familia.</p>
+  </section>
+
+  <section id="quehago">
+    <h2>¿Qué hago y qué quiero?</h2>
+    <p>Estudio la preparatoria en la escuela Anexa a la Normal #4 de Nezahualcóyotl. Estoy en mi último semestre. Quiero entrar a la Normal para ser maestra de primaria, estudiar una maestría, casarme, tener una hija o hijo, una casa y una camioneta.</p>
+  </section>
+
+  <section id="cv">
+    <h2>Currículum</h2>
+    <p><strong>Nombre:</strong> Fernanda Martínez Castro</p>
+    <p><strong>Edad:</strong> 20 años</p>
+
+    <h3>Perfil Profesional</h3>
+    <p>
+      Soy una profesional en Pedagogía con maestría, egresada de la Universidad Pedagógica Nacional (UPN). Me especializo en el desarrollo educativo, diseño de programas de enseñanza y orientación pedagógica.
+    </p>
+
+    <h3>Educación</h3>
+    <ul>
+      <li><strong>Maestría en Educación</strong> – Universidad Pedagógica Nacional</li>
+      <li><strong>Licenciatura en Pedagogía</strong> – Universidad Pedagógica Nacional</li>
+    </ul>
+
+    <h3>Habilidades</h3>
+    <ul>
+      <li>Diseño de planes y programas educativos</li>
+      <li>Orientación educativa</li>
+      <li>Trabajo con niños y jóvenes</li>
+      <li>Capacitación docente</li>
+      <li>Comunicación efectiva</li>
+    </ul>
+
+    <h3>Contacto</h3>
+    <p>
+      Email: fernanda.martinez@email.com<br>
+      Teléfono: (55) 1234-5678
+    </p>
+  </section>
+
+</body>
+</html>
